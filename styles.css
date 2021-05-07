@@ -155,3 +155,31 @@ body {
     text-align: center;
     font-family: "Muli", sans-serif;
 }
+.menu-icon {
+    display: none;
+}
+@media only screen and (max-width:700px) {
+    .topnav {
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    .topnav a {
+        color: #fff;
+
+    }
+    .menu-icon {
+        display: block;
+        width: 20px;
+    }
+    .hide {
+        display: none;
+    }
+}

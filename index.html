@@ -14,15 +14,17 @@
     <a id="top"></a>
     <header class="header">
         <h1 id="logo"><img src="Images/logo 2.PNG" alt="logo"></h1>
-        <nav class="topnav">
+        <nav class="topnav" id="menuList">
             <a class="nlinks" href="#Home">Home</a>
             <a class="nlinks" href="#divider">Find Apartments</a>
             <a class="nlinks" href="#listing">Listings</a>
             <a class="nlinks" href="#contact">Contact Us</a>
         </nav>
         <div class="topicons">
-            <i class="fas fa-user-circle" id="user"></i>
-            <i class="fas fa-search"></i>
+            <div class="hide">
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-search"></i> </div>
+            <img class="menu-icon" src="/Images/menu.png" onclick="togglemenu()">
         </div>
     </header>
 
@@ -103,6 +105,6 @@
         <p class="copy">&copy; Spidii Homes Ltd. 2021</p>
         <a href="#top"><i class="far far fa-arrow-alt-circle-up"></i></a>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
