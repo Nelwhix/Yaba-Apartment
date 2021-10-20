@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,100 +10,94 @@
     <script src="https://kit.fontawesome.com/9ab8010152.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a id="top"></a>
     <header class="header">
-        <h1 id="logo"><img src="Images/logo 2.PNG" alt="logo"></h1>
-        <nav class="topnav" id="menuList">
-            <a class="nlinks" href="#Home">Home</a>
-            <a class="nlinks" href="#divider">Find Apartments</a>
-            <a class="nlinks" href="#listing">Listings</a>
-            <a class="nlinks" href="#contact">Contact Us</a>
-        </nav>
+        <h1 class="logo"><img src="Images/logo 2.PNG" alt="logo"></h1>
         <div class="topicons">
-            <div class="hide">
             <i class="fas fa-user-circle"></i>
-            <i class="fas fa-search"></i> </div>
-            <img class="menu-icon" src="/Images/menu.png" onclick="togglemenu()">
+            <i class="fas fa-search" id="searchIcon"></i>
         </div>
     </header>
+    <nav>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#find apartments">Find Apartments</a></li>
+            <li><a href="#Property listing">List your property</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="banner">
+        <img src="Images/banner.png" alt="banner">
+    </section>
 
-    <main class="main">
-        <section class="top">
-            <div class="imgbox">
-            <img src="Images/banner.png" alt="banner" class="banner"></div>
-            <div class="search">
-                <input type="search" placeholder="Chemist">
-                <i class="fas fa-search"></i>
-            </div>
-        </section>
-        
-        <h2 id="divider">Find Apartments</h2>
-    </main>
     <section class="find">
-        <div class="box" id="stupid">
-            <img src="Images/balcony.jpg" alt="home">
+        <h2>Find Apartments by location</h2>
+        <div class="box-container">
+        <div class="box">
+            <img src="Images/balcony.jpg" alt="balcony">
             <h3 class="location">Abule-Oja</h3>
             <p class="details">Proximity to Unilag and a nice neighbourhood</p>
-            <h5 class="price">150k-500k</h5>
-            <button class="click">Know more</button>
+            <p class="price">150k-500k</p>
+            <button class="button">Know More</button>
         </div>
-
         <div class="box">
-            <img src="Images/balcony.jpg" alt="home">
+            <img src="Images/balcony.jpg" alt="balcony">
             <h3 class="location">Pako</h3>
             <p class="details">Proximity to Unilag and a nice neighbourhood</p>
-            <h5 class="price">150k-500k</h5>
-            <button class="click">Know more</button>
+            <p class="price">150k-500k</p>
+            <button class="button">Know More</button>
         </div>
-
         <div class="box">
-            <img src="Images/balcony.jpg" alt="home">
+            <img src="Images/balcony.jpg" alt="balcony">
             <h3 class="location">Chemist</h3>
             <p class="details">Proximity to Unilag and a nice neighbourhood</p>
-            <h5 class="price">150k-500k</h5>
-            <button class="click">Know more</button>
+            <p class="price">150k-500k</p>
+            <button class="button">Know More</button>
         </div>
-
-        <div class="box" id="annoying">
-            <img src="Images/balcony.jpg" alt="home">
+        <div class="box">
+            <img src="Images/balcony.jpg" alt="balcony">
             <h3 class="location">Abule-Ijesha</h3>
             <p class="details">Proximity to Unilag and a nice neighbourhood</p>
-            <h5 class="price">150k-500k</h5>
-            <button class="click">Know more</button>
+            <p class="price">150k-500k</p>
+            <button class="button">Know More</button>
         </div>
+    </div>
     </section>
 
     <footer class="footer">
         <div class="f1">
             <div class="line1">
-               <a href="" class="nlinks">Locations</a>
-               <a href="" class="nlinks">Developers</a>
-               <a href="" class="nlinks">Hot zones</a>
-               <a href="" class="nlinks">Sold</a>
+                <a href="#nn">Locations</a>
+                <a href="#nn">Developers</a>
+                <a href="#nn">Hot Zones</a>
+                <a href="#nn">Sold</a>
             </div>
             <div class="line2">
-                <a href="" class="nlinks">Buy</a>
-                <a href="" class="nlinks">Sell</a>
-                <a href="" class="nlinks">Rent</a>
+                <a href="#nn">Buy</a>
+                <a href="#nn">Sell</a>
+                <a href="#nn">Rent</a>
             </div>
             <div class="line3">
                 <div class="sub">
-                    <input type="text" placeholder="Subscribe"> 
+                    <input type="text" placeholder="Subscribe">
                     <button class="subtn">Enter</button>
-
                 </div>
             </div>
         </div>
         <div class="f2">
-            <div class="topicons">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-whatsapp"></i>
+            <div class="icons">
+                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                 <i class="fa fa-twitter" aria-hidden="true"></i>
+                 <i class="fa fa-whatsapp" aria-hidden="true"></i>
             </div>
         </div>
         <p class="copy">&copy; Spidii Homes Ltd. 2021</p>
         <a href="#top"><i class="far far fa-arrow-alt-circle-up"></i></a>
     </footer>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -1,185 +1,243 @@
-h1 {
-    font-family: "B612", serif;
-}
-::-webkit-scrollbar {
-    display: none;
-}
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
 body {
-    width: 100vw;
+    width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 .header {
-    width: 80vw;
-    height: 100px;
-    margin: 2% auto;
     display: flex;
     justify-content: space-between;
+    width: 80vw;
     align-items: center;
+    margin: 2% auto;
+    height: 100px;
 }
-.nlinks, .main {
+.header img {
+    height: 20vh;
+}
+nav {
+    background: rgb(130, 226, 130);
+    width: 100vw;
+}
+.navLinks {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    height: 5vw;
+    align-items: center;
+    margin-left: auto;
+    width: 50vw;
+    
+}
+.navLinks a {
     text-decoration: none;
+    font-family: "Muli", sans-serif;
     padding: 24px;
     color: black;
-    font-family: "Muli", sans-serif;
-}
-.nlinks:hover {
-    color: lightskyblue;
-}
-i {
-    padding: 20px;
-}
-
-#divider {
     text-align: center;
-    margin-top: 0%;
 }
-.banner {
-    width: 98vw;
-    height: auto;
-    margin-left: 0px;
+.navLinks a:hover {
+    color: teal;
 }
-body {
-    background-color: white;
+.topicons {
+    cursor: pointer;
+    width: 8%;
 }
-.box {
-    width: 300px;
-    margin-left: 30px;
-    font-family: "Muli";
+.topicons i {
+    padding: 10px;
 }
-.box > img {
+.topicons i:hover {
+    color: skyblue;
+}
+#searchIcon {
+    padding-left: 5px;
+}
+#menuIcon {
+    display: none;
+}
+.banner img {
+    width: 100%;
+    height: 60%;
+}
+.find {
+    margin: 2% auto;
+    margin-left: 50px;
+}
+.find h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Muli", sans-serif;
+    margin: 30px 0;
+}
+.box img {
     width: 20vw;
     height: auto;
 }
-
-.box > p, h3, img {
+.box-container {
+    display: flex;
+    justify-content: space-around;
+}
+.box {
+    width: 30%;
+    font-family: "Muli";
+}
+.details {
+    width: 15vw;
+}
+.box > h3, p, img {
     margin-bottom: 4%;
 }
-.click {
-    margin-top: 4%;
+.button {
     width: 120px;
     height: 36px;
+    font-size: 15px;
     background-color: rgb(113, 145, 113);
-    color: #fff;
-    padding: 4px;
     border: none;
-    font-size: 1em;
 }
-.click:hover {
+.button:hover {
     background-color: orange;
 }
-.find {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0px;
-}
-#user {
-    width: 20px;
-    height: auto;
-}
-.search {
-    width: 700px;
-    height: 50px;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    left: 30%;
-    top: -170px;
-    border-radius: 5px;
-    align-items: center;
-    padding-left: 4px;
-    opacity: 0.7;
-}
-.search input {
-    background: none;
-    border: none;
-    height: 50px;
-    width: 500px;
-}
-::placeholder {
-    font-size: 1.4em;
-}
-.search i {
-    border-left: 1px solid rgb(116, 116, 116);
-    padding: 12px;
-    opacity: 0.4;
-}
-#annoying {
-    margin-right: 10px;
-}
 .footer {
-    width: 100vw;
-    height: auto;
     border-top: 1px solid #eee;
-    padding-top: 4%;
-    margin-top: 50px;
 }
 .f1 {
     display: flex;
     justify-content: space-around;
-    
 }
 .line1, .line2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+.line1 > a, .line2 > a {
+    color: black;
+    font-family: "Muli", sans-serif;
+    text-decoration: none;
+    margin-top: 5vh;
+}
+.line1 > a:hover, .line2 > a:hover {
+    color: skyblue;
+}
+.line3 {
+    margin-top: 5vh;
 }
 .sub {
+    border: 1px solid black;
+}
+.sub > input {
     width: 400px;
     height: 40px;
-    border: 1px solid #000;
-    background: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 4%;
-}
-.sub input {
-    background: none;
     border: none;
-    height: 30px;
 }
 .subtn {
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 45px;
+    font-size: 15px;
     background-color: rgb(113, 145, 113);
-    color: #fff;
     border: none;
-    font-size: 1em;
-    padding: 2px;
+}
+.subtn:hover {
+    background-color: orange;
+}
+input::placeholder {
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+}
+.f2 {
+    margin-top: 30px;
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    width: 10vw;
+}
+.icons > i:hover {
+    color: skyblue;
+    cursor: pointer;
 }
 .copy {
     text-align: center;
     font-family: "Muli", sans-serif;
 }
-.menu-icon {
-    display: none;
-}
-@media only screen and (max-width:700px) {
-    .topnav {
-        width: 100%;
-        background: linear-gradient(#ff54a2, #ff575a);
+@media screen and (max-width: 768px) {
+    body {
+        width: 100vw;
+        height: auto;
+    }
+    nav {
+        height: 10vh;
+        width: 100vw;
+        position: relative;
+    }
+    .navLinks {
+        position: fixed;
+        flex-direction: column;
+        height: 68.5vh;
+        width: 100vw;
+        margin-top: 10%;
+        clip-path: circle(100px at 90% -30%);
+        -webkit-clip-path: circle(100px at 90% -30%);
+        background: rgb(130, 226, 130);
+        transition: all 1s ease-out;
+    }
+    .navLinks.open {
+        clip-path: circle(1000px at 90% -30%);
+        -webkit-clip-path: circle(1000px at 90% -30%);
+    }
+    .header {
+        width: 80vw;
+        height: 20vh;
+    }
+    .topicons {
+        width: 50vw;
+    }
+    .topicons i {
+        margin-left: auto;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background: black;
+    }
+     .hamburger {
         position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-        display: block;
-        margin-top: 10px;
+        right: 3%;
+        top: 30%;
+        cursor: pointer;
+    }
+    .banner img {
+        height: 60vw;
+    }
+    .find {
+        margin-left: 0;
+    }
+    .box-container {
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 50vw;
         margin-bottom: 10px;
-
     }
-    .topnav a {
-        color: #fff;
-
+    .box img {
+        width: 40vw;
     }
-    .menu-icon {
-        display: block;
-        width: 20px;
+    .details {
+        width: 30vw;
     }
-    .hide {
+    .f1 {
+        flex-wrap: wrap;
+    }
+    .sub {
         display: none;
     }
+    .icons {
+        width: 30vw;
+        margin: 30px 0;
+    }
 }
+

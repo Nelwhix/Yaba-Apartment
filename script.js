@@ -1,10 +1,7 @@
-var menuList = document.getElementById("menuList");
-menuList.style.maxHeight = "0px";
-function togglemenu() {
-    if (menuList.style.maxHeight == "0px") {
-        menuList.style.maxHeight = "130px";
-        
-    } else {
-        menuList.style.maxHeight = "0px"
-    }
-}
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".navLinks");
+const links = document.querySelector(".navLinks li");
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+})
