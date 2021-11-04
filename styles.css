@@ -171,6 +171,9 @@ input::placeholder {
     .header {
         width: 100%;
     }
+    .logo {
+        width: 60%;
+    }
     .topicons {
         width: 15%;
     }
