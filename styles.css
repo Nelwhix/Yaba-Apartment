@@ -218,6 +218,7 @@ input::placeholder {
     }
     .box-container {
         flex-wrap: wrap;
+        text-align: center;
     }
     .box {
         width: 50vw;
